@@ -1,0 +1,6 @@
+{
+  "name": "HCR v4.0 Orchestrator",
+  "description": "Central orchestration framework for quantitative Historical Culinary Reconstruction using computational solver models and strict compliance linting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
