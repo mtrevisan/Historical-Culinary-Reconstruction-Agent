@@ -1,5 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import Markdown from "react-markdown";
+import remarkMath from "remark-math";
+import remarkGfm from "remark-gfm";
+import rehypeKatex from "rehype-katex";
+import "katex/dist/katex.min.css";
 import { Play, Loader2, Database, AlertCircle, FileText, CheckCircle2, History } from "lucide-react";
 import { cn } from "./utils";
 
@@ -56,7 +60,7 @@ export default function App() {
               <Database className="w-5 h-5 text-indigo-400" />
             </div>
             <div>
-              <h1 className="font-semibold text-sm tracking-wide">HCR v4.0 Central Orchestrator</h1>
+              <h1 className="font-semibold text-sm tracking-wide">HCR v4.0</h1>
               <p className="text-xs text-slate-400 font-mono">Historical Culinary Reconstruction</p>
             </div>
           </div>
@@ -93,7 +97,7 @@ export default function App() {
                 </div>
               ) : (
                 <div className="hidden sm:block text-xs text-slate-500 leading-relaxed bg-slate-50 p-3 rounded-md border border-slate-100 flex-1">
-                  Provide historical recipes to calculate high-precision modern metrics via the strict HCR v4.0 multi-agent pipeline.
+                  Provide historical recipes to calculate modern metrics via the strict HCR v4.0 multi-agent pipeline.
                 </div>
               )}
               
@@ -128,7 +132,7 @@ export default function App() {
           {output ? (
             <div className="flex-1 overflow-y-auto p-4 md:p-8 lg:px-12">
               <div className="bg-white border border-slate-200 rounded-lg shadow-sm w-full max-w-4xl mx-auto p-6 md:p-10 mb-8 prose prose-slate prose-headings:font-semibold prose-h2:text-xl prose-h2:text-slate-800 prose-h2:border-b prose-h2:pb-2 prose-h3:text-lg prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 max-w-none">
-                <Markdown>{output}</Markdown>
+                <Markdown remarkPlugins={[remarkMath, remarkGfm]} rehypePlugins={[rehypeKatex]}>{output}</Markdown>
                 <div ref={resultEndRef} />
               </div>
             </div>

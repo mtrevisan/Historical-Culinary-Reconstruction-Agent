@@ -40,8 +40,8 @@ Collect partial blocks generated and validated by individual modules; compose fi
   1. **Contextual Approximation:** Estimate the missing historical quantity in native units (once, libbre, quattrini) by analyzing parallel text structures from the same author, city, or period present in \`## Historical Concordance & Verification\`.
   2. **Metrological Retro-Conversion & Phase Enforcement:** If no parallel historical baseline is available, coordinate dynamically with Module 2. Retrieve the optimized modern mass or volume. If the ingredient is categorized under the fluid phase or identified as a non-aromatic liquid matrix (e.g., milk, almond milk, wine), Agent-1 is strictly prohibited from using weight-based units (libbre, once) for retro-conversion. It MUST execute the retro-conversion using regional volumetric liquid units documented for that historical city/period.
   3. **Syntax Rendering:** Output the estimated ingredient in \`## Historical List of Ingredients\` using the mandatory inference syntax:
-     - For Solids/Fats: \`- [Inferred: X native_weight_units (Y.Y[Y] g)] ingredient_name\`
-     - For Fluids: \`- [Inferred: X native_volumetric_units (Y.Y[Y] g = Z.Z ml)] ingredient_name\`
+     - For Solids/Fats: \`[Inferred: X native_weight_units (Y.Y[Y] g)] ingredient_name\`
+     - For Fluids: \`[Inferred: X native_volumetric_units (Y.Y[Y] g = Z.Z ml)] ingredient_name\`
      Constraint: X MUST be expressed strictly as an integer or a base-12 fraction (denominators: 2,3,4,6,8,12). Absolute prohibition on decimal notations (e.g., NO 2.1 or 0.5) inside the \`native_units\` slot.
   4. **Technical Justification:** Document the mathematical and philological rationale of the estimation inside the Technical Analysis (TA), flagging the confidence level as "Inferred Historical Scalar".
 - **MDA Rule:** If phase/density is unknown, apply single-dimension bypass (output ONLY \`X.X[X] g\` OR \`Y.Y ml\` in historical list; omit cross-dimensional conversion).
