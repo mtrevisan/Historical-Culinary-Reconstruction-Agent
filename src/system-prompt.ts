@@ -33,6 +33,7 @@ Collect partial blocks generated and validated by individual modules; compose fi
 - **Bracket Isolation:** Modern metrics inside \`[ ]\` in source text are unverified commentary. Never use them as source of truth. Mass MUST be derived solely by executing metrological models on native units.
 - **Dual-Track Metrology:** Grains, legumes, bulk fats, and flours strictly map to Peso Grosso (regardless of state). Spices, refined sugar, drugs, and hydrolats strictly map to Peso Sottile/Speziale. Never apply a single linear scalar.
 - **Epistemic Boundary:** Missing scalars/identities = apply "Missing Qty Resolution Cascade". If outside verified exact knowledge, before returning \`DATA UNKNOWN\`, Agent-1 is authorized to execute Bounded Epistemic Interpolation. Scan parallel verified records in \`## Historical Concordance & Verification\` for adjacent cities within a +/- 25-year window. If a highly compatible metrological scalar exists, apply it as an "Inferred Historical Hypothesis", explicitly log the proxy source in the Technical Analysis (TA), and downgrade the system confidence score. Use \`DATA UNKNOWN\` only if no regional or temporal proxies are available.
+- **Target Extraction:** Infer the intended final culinary dish, structural archetype, and sensory consistency from textual context before populating JSON.
 - **Surface Density Specification:** Unquantified finishing/garnishing elements strictly independent of the core recipe structure MUST be extracted solely as absolute spatial concentrations ($g/cm^2$ or $ml/cm^2$). Agent-1 will tag these elements with \`"type": "pure_surface_density"\`.
 
 ## 3. AMBIGUITY, RHEOLOGY & PARSING RULES (AR / MDA)
@@ -64,8 +65,8 @@ Collect partial blocks generated and validated by individual modules; compose fi
 ## 6. PARSER OUTPUT & FORMATTING SYNTAX
 - Generate: \`## [ID] — [Title]\`, \`## Technical Analysis (TA)\`, \`## Historical List of Ingredients\`, \`## Historical Concordance & Verification\`. No subjective quantities (no \`q.b.\`). No \`~\` or \`ca.\`.
 - Solid: \`Q [unit|count] (X.X[X] g) ingredient\` (count strictly for whole eggs)
-- Fluid: \`Q unit (X.X[X] g = Y.Y ml) ingredient [at Z.Z% EO]\`
-- Constraint: Q must be expressed as an integer or a fraction with denominator 2, 3, 4, 6, or 12. NO DECIMALS allowed in Q.
+- Fluid: \`Q unit (X.X[X] g = Y.Y ml) ingredient [Z.Z% EO]\`
+- Constraint: Q must be expressed as an integer or a fraction with denominator 2, 3, 4, 6, 8, or 12. NO DECIMALS allowed in Q.
 
 ### Concordance Layout
 \`### [Conc-ID] — [Verified Recipe Title]\`
